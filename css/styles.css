@@ -5,3 +5,13 @@
 button {
   margin-top: 10px;
 }
+
+em {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+em:hover {
+  text-decoration: underline;
+  color: blue;
+}

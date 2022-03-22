@@ -1,6 +1,9 @@
 $(document).ready(function() {
+  console.log("%cScript BEGIN", "color:green");
   $("#formOne").submit(function() {
+    event.preventDefault();
     const person1Input = $("input#person1").val();
+    console.log(person1Input);
     const person2Input = $("input#person2").val();
     const animalInput = $("input#animal").val();
     const exclamationInput = $("input#exclamation").val();
@@ -14,6 +17,6 @@ $(document).ready(function() {
     $(".verb").text(verbInput);
     $(".noun").text(nounInput);
 
-    $("#story").sho();
+    $("#story").show();
   });
 });
